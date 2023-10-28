@@ -5,7 +5,7 @@ internal class Program
     private static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
-        string s = "(((((("; 
+        string s = "[()(())]"; 
         Console.WriteLine(checkParentesis(s));
     }
     public static bool checkParentesis(string s)
