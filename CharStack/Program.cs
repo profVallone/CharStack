@@ -5,10 +5,10 @@ internal class Program
     private static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
-        string s = "[()(())]"; 
-        Console.WriteLine(checkParentesis(s));
+        string s = "[]()[()]"; 
+        Console.WriteLine(checkParenthesis(s));
     }
-    public static bool checkParentesis(string s)
+    public static bool checkParenthesis(string s)
     {
         CharStack cs = new CharStack(s.Length);
         for(int i = 0; i < s.Length; i++)
